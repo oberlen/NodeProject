@@ -1,0 +1,31 @@
+<html >
+
+<body>
+    <h1>Result Page...</h1>
+
+    <table border="1">
+
+      <th>Movie Name</th>
+      <th>Same Genres</th>
+      <% movies.map(movie => { %>
+        <tr>
+          <td>
+            <a href="<%=`/moviePage/movie/${movie.id}`%>"><%= movie.name %></a>
+          </td>
+          <td><%=movie.sameGenres%> and more...</td>
+        </tr>
+      <% })%>
+
+    </table>
+
+
+  
+      <button><a href="/menu">Back</a></button><br/><br/>
+
+  
+
+ 
+     
+</body>
+</html>
+

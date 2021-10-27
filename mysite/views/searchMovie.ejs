@@ -1,0 +1,35 @@
+<html >
+
+<body>
+    <h1>Search movie...</h1>
+
+  <form action="/searchMovie/searchData" method="post">
+      Name: <input type="text" name="name"><br/><br/>
+      Language: 
+      <select name="language">
+      <option value="English">English</option>
+      <option value="Hebrew">Hebrew</option>     
+      <option value="Spanish">Spanish</option>     
+      <option value="Russian">Russian</option>     
+      <option value="French">French</option>     
+
+    </select><br/><br/>
+    Genres: <select name="genres">
+      <option value="Comedy">Comedy</option>
+      <option value="Horror">Horror</option>
+      <option value="Action">Action</option>
+      <option value="Drama">Drama</option>
+      <option value="Crime">Crime</option>
+      <option value="Thriller">Thriller</option>
+      <option value="Adventure">Adventure</option>
+    </select><br/><br/>
+      <input type="submit" value="Search">
+      <button><a href="/menu">Back</a></button><br/><br/>
+
+  </form>
+
+ 
+     
+</body>
+</html>
+

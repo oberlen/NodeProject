@@ -1,0 +1,25 @@
+<html >
+<head>
+</head>
+<body>
+    <h1>UserData Page...</h1><br/>
+
+
+    <form action="<%= user ? `/userData/updateUser/${user.id}` : '/userData/addUser' %>" method="POST">
+        UserName: <input type="text"  name="username" value="<%=user ? user.username : '' %>" ><br/><br/>
+        Password: <input type="text" name="password" value="<%=user ? user.password : '' %>" ><br/><br/>
+        CreateDate: <input type="text" name="createDate" value="<%=user ? user.createDate : '' %>" ><br/><br/>
+        NumOfTransactions: <input type="text" name="numOfTransactions" value="<%=user ? user.numOfTransactions : '' %>" ><br/><br/>
+
+        <!-- <input type="submit" value="Update"> -->
+        <input type="submit" value="<%=user ? 'Update' : 'Add User' %>">
+        <button><a href="/menu">Back</a></button><br/><br/>
+        <br/><br/>
+
+
+    </form>
+    
+    
+</body>
+</html>
+

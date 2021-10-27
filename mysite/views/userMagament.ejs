@@ -1,0 +1,26 @@
+<html >
+<head>
+</head>
+<body>
+    <h1>UserMagament Page...</h1><br/>
+
+    <ul>
+           
+        <% users.map(user=> { %>
+            
+            <li><%= user.username %></li>
+            <a href="<%=`/userData/deleteUser/${user.id}`%>">Delete</a>
+            <a href="<%=`/userData/update/${user.id}`%>">Update</a>
+        
+
+        <% }) %>
+        
+    </ul>
+
+    <button><a href="/userData">Add New</a></button>
+    <button><a href="/menu">Back</a></button><br/><br/>
+
+
+</body>
+</html>
+
